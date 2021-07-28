@@ -4,22 +4,59 @@ const LogIn = () => {
     return (
         <div class="container">
             <h1>Log In</h1>
-            <div class="inputs">
-                <h3>e-mail</h3>
-                <input placeholder="example@gmail.com"
+            <Inputs>
+                <Label>e-mail</Label>
+                <Input placeholder="example@gmail.com"
                         autocomplete="off"
                         id="email"
                         type="text" />
 
-                <h3>password</h3>
-                <input id="password" 
+                <Label>password</Label>
+                <Input id="password" 
                     type="password" />
-            </div>
+            </Inputs>
             <div class="login-button">
-                <button>log in!</button>
+                <Button>log in!</Button>
             </div>
         </div>
     )
 }
 
 export default LogIn;
+const Label = styled.h3`
+    display: block;
+    padding-left: 8px;
+    focus {
+        opacity: 1;
+    }
+`
+
+const Inputs = styled.div `
+    margin-top: 10px;
+`
+const Input = styled.input`
+   width: 100%;
+   padding: 14px 20px;
+   border: 0px;
+   background: #F1F3F6;
+   border-radius: 18px;
+   border: 2px solid rgb(var(--color));
+   transition: all .25s ease;
+   opacity: .2;
+   box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.24);
+
+`
+
+const Button = styled.button`
+    background: rgb(var(--primary));
+    color: #fff;
+    border: 0px;
+    padding: 14px 20px;
+    border-radius: 18px;
+    width: 100px;
+    display: block;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all .25s ease;
+`
+

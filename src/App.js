@@ -1,10 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import FrontPageHeader from './FrontPageHeader.js'
+import Info from './Info.js'
+import LogIn from './LogIn.js'
 
 function App() {
   return (
     <div className="App">
-      testing 
+      <FrontPageHeader />
+      <Info />
+      <LogIn />
     </div>
   );
 }

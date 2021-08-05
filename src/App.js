@@ -1,14 +1,12 @@
 import './App.css';
-import FrontPageHeader from './FrontPageHeader.js'
-import Info from './Info.js'
-import LogIn from './LogIn.js'
+import LogInPage from './LogInPage.js'
+import Footer from './Footer.js'
 
 function App() {
   return (
     <div className="App">
-      <FrontPageHeader />
-      <Info />
-      <LogIn />
+      <LogInPage />
+      <Footer />
     </div>
   );
 }

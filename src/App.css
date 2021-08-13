@@ -38,7 +38,6 @@
 }
 
 h1::before{
-  content: 'welcome to album'd';
   position: absolute;
   color: green;
   filter: blur(20px)

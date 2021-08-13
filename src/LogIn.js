@@ -3,7 +3,7 @@ import React from 'react';
 const LogIn = () => {
     return (
         <div class="container">
-            <h1>Log In</h1>
+            <H1>Log In</H1>
             <Inputs>
                 <Label>e-mail</Label>
                 <Input placeholder="example@gmail.com"
@@ -23,6 +23,13 @@ const LogIn = () => {
 }
 
 export default LogIn;
+
+const Label = styled.h1`
+    position: absolute;
+    color: green;
+    filter: blur(20px)
+`
+
 const Label = styled.h3`
     display: block;
     padding-left: 8px;

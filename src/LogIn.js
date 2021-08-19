@@ -2,7 +2,7 @@ import React from 'react';
 
 const LogIn = () => {
     return (
-        <div class="container">
+        <Container>
             <H1>Log In</H1>
             <Inputs>
                 <Label>e-mail</Label>
@@ -18,11 +18,20 @@ const LogIn = () => {
             <div class="login-button">
                 <Button>log in!</Button>
             </div>
-        </div>
+        </Container>
     )
 }
 
 export default LogIn;
+
+const Container = styled.div`
+    background: rgba( 126, 211, 33, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.0px );
+    -webkit-backdrop-filter: blur( 5.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+`
 
 const Label = styled.h1`
     position: absolute;
